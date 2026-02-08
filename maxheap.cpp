@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
+// making maxheap
 void adjust(int arr[], int i, int n)
 {
     int x;
@@ -31,19 +32,19 @@ int main()
 
     int arr[] = {0, 100, 50, 200, 85, 50, 600, 70, 800};
     int n = 8;
-
+    // giving first perfectly postioned element
     for (int i = n / 2; i >= 1; i--)
     {
         adjust(arr, i, n);
     }
-
+    // then sorting accordingly
     for (int i = n; i >= 2; i--)
     {
         swap(arr[1], arr[i]);
 
         adjust(arr, 1, i - 1);
     }
-
+    // output
     for (int i = 1; i <= n; i++)
     {
 
