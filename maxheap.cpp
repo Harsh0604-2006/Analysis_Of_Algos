@@ -37,7 +37,7 @@ int main()
     {
         adjust(arr, i, n);
     }
-    // then sorting accordingly
+    // then sorting accordingly in ascending order
     for (int i = n; i >= 2; i--)
     {
         swap(arr[1], arr[i]);
